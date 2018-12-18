@@ -10,10 +10,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String URL = "http://localhost:8080/jhon";
-        WebView view = (WebView) this.findViewById(R.id.webView);
+        //String URL = "https://www.google.com.au/";
+        WebView view = this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new WebViewClient());
-        view.loadUrl(URL);
+        view.loadUrl("http://jhoncaterbury.000webhostapp.com/login.php");
     }
 }
